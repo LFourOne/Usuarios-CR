@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+thead{
+    display: flex;
+    border: 2px solid black;
+    height: 100%;
+    width: 1000px;
+    margin-left: 450px;
+    margin-top: 10px;
+    justify-content: center;
+}
+tr{
+    display: flex;
+    gap: 200px
+}
+tbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 1200px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.tr-user{
+    display: flex;
+    gap: 60px;
+}
+.last-name{
+    margin-right: 100px;
+    margin-left: 150px;
+}
+.btn-container{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 900px;
+    height: 100px;
+    width: 300px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    margin: 150px 700px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
+.title{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}

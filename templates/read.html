@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }} ">
+    <title>Usuarios CR</title>
+</head>
+<body>
+    <h1> All Users </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Last Name </th>
+                <th> Email </th>
+                <th> Created At </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr class="tr-user">
+                <th> {{ user.first_name }} </th>
+                <th class="last-name"> {{ user.last_name }} </th>
+                <th> {{ user.email }} </th>
+                <th> {{ user.created_at }} </th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <section class="btn-container">
+        <form action="/user/new" class="btn-form" method="GET">
+            <input type="submit" value="Create User">
+        </form>
+    </section>
+</body>
+</html>
